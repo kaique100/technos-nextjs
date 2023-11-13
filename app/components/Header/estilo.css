@@ -1,0 +1,136 @@
+:root {
+    --azul: #1B5BFF;
+    --branco: #fff;
+    --pretoTopo: #272727;
+    --pretoCorpo: #1E1B1B;
+    --fundo: #272727;
+    --cinza: #444343;
+    --cinzaSegundario: #676767;
+  }
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--pretoTopo);
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+
+header a .logo {
+    width: 185px;
+}
+
+
+header .navbar a {
+    font-size: 1.2rem;
+    padding: 0 1.5rem;
+    color: var(--branco);
+    text-transform: uppercase;
+    text-align: center;
+    font-family: Nunito;
+    /* font-size: 12px; */
+    font-style: normal;
+    font-weight: 500;
+    
+}
+
+
+
+
+
+header #toggler {
+    display: none;
+}
+
+.btnEntrar{
+    font-size: 17px;
+    text-align: center;
+    font-weight: 300;
+    text-transform: uppercase;
+    background-color: var(--azul);
+    color: var(--branco);
+    border-radius: 3px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+header .fa-bars {
+    font-size: 3rem;
+    color: #333;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    cursor: pointer;
+    border: .1rem solid rgba(0, 0, 0, .3);
+    display: none;
+}
+div .teste{
+    font-size: 14px ;
+}
+header .teste a{
+    font-size: 17px ;
+    text-align: center;
+    font-weight: 500;
+    text-transform: uppercase;
+    background-color: var(--azul) !important;
+    color: var(--branco);
+    border-radius: 3px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 992px) {
+
+    header {
+        padding: 2rem 6%;
+    }
+  
+   
+}
+
+
+@media screen and (max-width:768px) {
+
+    header .fa-bars{
+        display: block;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #eee;
+        border-top: .1rem solid rgba(0, 0, 0, .1);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header #toggler:checked ~ .navbar{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    header .navbar a{
+        margin: 1.5rem;
+        padding: 1.5rem;
+        background: #fff;
+        border: .1rem solid rgba(0, 0, 0, .1);
+        display: block;
+    }
+}
+
+@media (max-width:450px) {
+
+    html {
+        font-size: 50%;
+        
+    }
+
+
+    
+}

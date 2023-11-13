@@ -1,0 +1,141 @@
+.topo-prestador {
+
+    color: var(--branco);
+    /* height: 498px; */
+    padding: 15rem 9% 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.topo-prestador p {
+    font-size: 12px;
+}
+
+.pesquisa-prestador form {
+    padding: 0rem 9%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pesquisa-prestador input {
+    width: 70%;
+    height: 48px;
+    border-radius: 6px;
+    border: 1px solid #8D8D8D;
+    background-color: transparent;
+}
+
+.pesquisa-prestador input::placeholder {
+
+    color: var(--branco);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    /* padding-left: 8px; */
+}
+
+input:focus,
+input:valid {
+    padding-left: 8px;
+    font-size: 14px;
+    /* bottom: 10px; */
+
+}
+
+.pesquisa-prestador button {
+    width: 20%;
+    height: 48px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.lista-prestador {
+    width: 100%;
+    padding: 8rem 9% 3rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
+}
+
+.lista-prestador section {
+    border-radius: 6px;
+    border: 1px solid #8D8D8D;
+    background: #444343;
+    align-items: center;
+    height: 240px;
+    text-align: center;
+    width: 200px;
+    margin-top: 6rem;
+    /* flex-wrap: wrap; */
+}
+
+.lista-prestador img {
+    width: 50%;
+    margin-top: -30px;
+    height: 107px;
+    border-radius: 6px;
+    border: 7px solid #444343;
+    background: lightgray 50% / cover no-repeat;
+}
+
+.lista-prestador h3 {
+    padding-bottom: 2rem;
+    font-size: 17px;
+}
+
+.lista-prestador p {
+    padding-bottom: 1rem;
+    font-size: 12px;
+}
+
+.lista-prestador button {
+    color: var(--branco);
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    width: 144px;
+    height: 34px;
+}
+
+
+@media screen and (max-width: 992px) {}
+
+
+
+@media screen and (max-width: 768px) {
+    .pesquisa-clientes input {
+        width: 60%;
+    }
+
+    .pesquisa-clientes button {
+        width: 30%;
+
+    }
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .pesquisa-clientes form {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .pesquisa-clientes form input {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .pesquisa-clientes form button {
+        width: 100%;
+    }
+
+    .lista-clientes {
+     justify-content: center;
+   }
+
+}

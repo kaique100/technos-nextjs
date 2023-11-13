@@ -1,0 +1,145 @@
+.topo-guincho {
+
+    color: var(--branco);
+    /* height: 498px; */
+    padding: 18rem 9% 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.topo-guincho p {
+    font-size: 12px;
+}
+
+
+
+.pesquisa-guincho form {
+    padding: 0rem 9%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pesquisa-guincho input {
+    width: 70%;
+    height: 48px;
+    border-radius: 6px;
+    border: 1px solid #8D8D8D;
+    background-color: transparent;
+}
+
+.pesquisa-guincho input::placeholder {
+
+    color: var(--branco);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    /* padding-left: 8px; */
+}
+
+input:focus,
+input:valid {
+    padding-left: 8px;
+    font-size: 14px;
+    /* bottom: 10px; */
+
+}
+
+.pesquisa-guincho button {
+    width: 20%;
+    height: 48px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.guincho {
+    display: flex;
+    justify-content: space-between;
+    padding: 5rem 9% 3rem;
+    /* background-color: red; */
+    flex-wrap: wrap;
+}
+
+.guincho section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    border-radius: 6px;
+    border: 1px solid #8D8D8D;
+    background: #444343;
+    width: 48.8%;
+    
+}
+
+.imgGuincho {
+    background: url('../../assets/guincho.png'), lightgray 0px -2.666px / 164.348% 103.291% no-repeat;
+    width: 100;
+    /* width: 34.2%;
+    height: 100%; */
+
+    width: 15vw;
+    height: 162px;
+    flex-shrink: 0;
+    background-position: center;
+    background-size: cover;
+    padding: 15px 21px;
+    border-radius: 6px 0px 0px 6px;
+}
+
+.conteudoGuincho {
+    padding: 15px 21px;
+}
+
+.conteudoGuincho h3 {
+    font-size: 13px;
+    font-weight: 800;
+    padding-bottom: 5px;
+    word-wrap: break-all
+}
+
+.conteudoGuincho p {
+    font-size: 12px;
+    font-weight: 500;
+    padding-bottom: 5px;
+
+}
+
+.conteudoGuincho p {
+   
+    padding-bottom: 5px;
+
+}
+
+
+@media screen and (max-width: 992px) {
+
+    .conteudoGuincho {
+        padding: 0px 10px;
+    }
+
+   
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .guincho {
+        display: block;
+    }
+
+    .guincho section {
+        width: 100%;
+    }
+    .imgGuincho {
+       
+        width: 41vw;
+        
+    }
+}
+
+
+
+@media screen and (max-width: 600px) {
+   
+}

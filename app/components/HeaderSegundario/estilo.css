@@ -1,0 +1,26 @@
+section nav {
+    padding: 9rem 9% 0.08% 9%;
+    background-color: var(--azul);
+    position: fixed;
+    width: 100%;
+}
+
+section nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    
+}
+
+section nav ul li a{
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+section nav ul li span{
+    margin: 6px;
+    
+}

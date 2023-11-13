@@ -1,0 +1,323 @@
+.home {
+  background: linear-gradient(90deg, #000 0%, rgba(0, 0, 0, 0.92) 13.02%, rgba(0, 0, 0, 0.81) 32.81%, rgba(0, 0, 0, 0.62) 54.17%, rgba(0, 0, 0, 0.00) 100%), url('../../public/banner.png'), lightgray 0px -327.646px / 100% 233.474% no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--branco);
+  height: 498px;
+  padding: 15rem 9%;
+}
+
+
+.home article {
+  padding: 0 10rem 0 0;
+  width: 50%;
+}
+
+.home article button {
+  font-size: 1rem;
+  width: 185px;
+  height: 38px;
+
+}
+
+article form button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+article form button span{
+  margin-left: 4px;
+}
+
+.home article h2 {
+  font-size: 2.8rem;
+  font-weight: bolder;
+  margin-bottom: 1rem;
+}
+
+.home article h2 span {
+  font-size: 2.8rem;
+  font-weight: bolder;
+}
+
+.home article p {
+  font-size: 16px;
+  margin-bottom: 5rem;
+  font-style: normal;
+
+
+}
+
+
+.servico {
+  /* background-color: blue; */
+  padding: 3rem 9%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+.servico .titulo-servicos {
+  width: 35%;
+}
+
+.servico .paragrafo-servicos {
+  width: 60%;
+  /* text-align: end; */
+  padding-left: 40.5rem;
+}
+
+
+.servico section p {
+  font-size: 12px;
+}
+
+.card-servicos {
+  padding: 0rem 8%;
+  display: flex;
+
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+
+.card-servicos section {
+  background: var(--cinza);
+  width: 352px;
+  margin: 0 10px 35px 10px;
+  padding: 20px 1px 20px 20px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+}
+
+.card-servicos section svg {
+  background-color: var(--azul);
+  width: 57px;
+  height: 57px;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.card-servicos section h3 {
+  font-size: 24px
+}
+
+.card-servicos section p {
+  font-size: 1.5rem;
+  padding: 0 48px 0 0;
+}
+
+.card-servicos section:last-child {
+  margin-left: 0%;
+}
+
+
+.titulo-funcionalidade {
+  background: linear-gradient(180deg, rgba(30, 27, 27, 0.56) 0%, rgba(30, 27, 27, 0.84) 37.5%, #1E1B1B 100%), url('../../public/banner3.png'), lightgray 0px -350.254px / 100% 396.452% no-repeat;
+  height: 241px;
+  background-position: center;
+  background-size: cover;
+  padding: 15rem 9%;
+  font-size: 2rem;
+}
+
+.descricao-funcionalidade {
+  padding: 2rem 7%;
+  background-color: var(--pretoCorpo);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.descricao-funcionalidade section {
+  display: flex;
+  margin: 20px 30px;
+  width: 40%;
+}
+
+
+.descricao-funcionalidade p {
+  font-size: 1.5rem;
+}
+
+.img-descricao {
+  margin-right: 24px;
+}
+
+.contato-home {
+  height: 474px;
+  background: linear-gradient(0deg, rgba(27, 91, 255, 0.62) 0%, rgba(27, 91, 255, 0.62) 100%), url('../../public/banner2.png'), lightgray 0px -458.671px / 100% 207.818% no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 10rem 9%;
+}
+
+.contato-home form {
+  background-color: var(--pretoCorpo);
+  width: 50%;
+  padding: 2rem 4rem;
+  border-radius: 6px;
+}
+
+.contato-home form input {
+  border-radius: 6px;
+  border: 1px solid #8D8D8D;
+  background: var(--cinza);
+  color: #FFF;
+  font-family: Nunito;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  width: 100%;
+  height: 43px;
+  padding-left: 15px;
+  margin-bottom: 1.5rem;
+}
+
+.contato-home form input::placeholder {
+  color: var(--brancoo);
+}
+
+.contato-home form p {
+  font-size: 19px;
+  margin-bottom: 8px;
+}
+
+.contato-home form button {
+  width: 185px;
+  color: #FFF;
+  text-align: center;   
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  height: 43px;
+  
+}
+
+
+
+@media screen and (max-width: 992px) {
+
+  .home {
+      padding: 15rem 6%;
+  }
+
+  .home article {
+      padding: 0 10rem 0 0;
+      width: 70%;
+  }
+
+  .servico {
+      display: block;
+      padding: 2rem 6%;
+  }
+
+
+  .servico .titulo-servicos {
+      width: 100%;
+  }
+
+  .servico .paragrafo-servicos {
+      width: 100%;
+      /* text-align: end; */
+      padding-left: 0rem;
+      padding-top: 3rem;
+
+  }
+
+  .card-servicos {
+      flex-wrap: wrap;
+
+      padding: 2rem 5%;
+
+
+  }
+
+  .card-servicos section:last-child {
+      margin-left: 27%;
+  }
+
+  
+  .contato-home{
+      
+      padding: 6rem 9%;
+      width: 100%;
+  }
+
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+  .home {
+      height: 364px;
+      padding: 12rem 6%;
+
+  }
+
+  .home article h2 {
+      font-size: 2.1rem;
+  }
+
+  .home article p {
+
+      margin-bottom: 3rem;
+
+
+  }
+
+  .home article {
+      padding: 0 1rem 0 0;
+      width: 90%;
+  }
+
+  .card-servicos section:last-child {
+      margin-left: 0%;
+  }
+
+  .descricao-funcionalidade section {
+
+      width: 100%;
+  }
+
+  .contato-home{
+      
+      padding: 9rem 9%;
+      width: 100%;
+  }
+
+  .contato-home form{      
+   
+      width: 100%;
+  }
+
+}
+
+
+
+@media screen and (max-width: 600px) {
+
+
+
+  .home article {
+      padding: 0 1rem 0 0;
+      width: 100%;
+      text-align: center;
+  }
+
+  .card-servicos section {
+      width: 100%;
+
+  }
+
+  .contato-home form button {
+      width: 100%;
+      
+  }
+}

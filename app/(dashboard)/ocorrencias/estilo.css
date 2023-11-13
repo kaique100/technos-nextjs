@@ -1,0 +1,171 @@
+.topo-servico {
+
+    color: var(--branco);
+    /* height: 498px; */
+    padding: 15rem 9% 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.topo-servico p {
+    font-size: 12px;
+}
+
+.pesquisa-servico form {
+    padding: 0rem 9%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pesquisa-servico input {
+    width: 70%;
+    height: 48px;
+    border-radius: 6px;
+    border: 1px solid #8D8D8D;
+    background-color: transparent;
+}
+
+.pesquisa-servico input::placeholder {
+
+    color: var(--branco);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    /* padding-left: 8px; */
+}
+
+input:focus,
+input:valid {
+    padding-left: 8px;
+    font-size: 14px;
+    /* bottom: 10px; */
+
+}
+
+.Card {
+    display: flex;
+    align-items: center;
+    
+}
+
+.iconCard{
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+.pesquisa-servico button {
+    width: 20%;
+    height: 48px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.lista-servico {
+    width: 100%;
+    padding: 8rem 9% 3rem;
+    display: flex;
+    
+}
+
+.lista-servico ul{
+    width: 100%;    
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.lista-servico ul li {
+    border-radius: 6px;
+    border: 1px solid #8D8D8D;
+    background: #444343;
+    list-style-type: none;
+    width: 325px;
+    height: 240px;
+    margin: 1rem 1rem;
+    display: flex;
+    padding: 20px 30px 20px 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.lista-servico ul li h3 {
+
+    font-size: 17px;
+}
+
+.lista-servico ul li p {
+    font-size: 12px;
+    
+}
+
+
+@media screen and (max-width: 992px) {
+      
+   .lista-servico {
+       
+        padding: 8rem 9% 3rem;
+        
+    }
+    .lista-servico ul li {
+      
+        margin: 10px 12px;
+        width: 300px;
+    }
+    
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .pesquisa-clientes input {
+        width: 60%;
+    }
+
+    .pesquisa-clientes button {
+        width: 30%;
+
+    }
+
+    .lista-servico {
+       
+        padding: 8rem 7% 3rem;
+        
+    }
+
+    .lista-servico ul li {
+      
+        margin: 10px 6px;
+        width: 300px;
+    }
+    .lista-servico ul   {
+        justify-content: center;
+    }
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .pesquisa-servico form {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .pesquisa-servico form input {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .pesquisa-servico form button {
+        width: 100%;
+    }
+
+    .lista-servico {
+        justify-content: center;
+    }
+
+    .lista-servico ul   {
+        justify-content: center;
+    }
+
+}

@@ -1,0 +1,65 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Baloo+2:wght@400;800&family=Nunito:ital,wght@0,300;0,800;1,800&family=Roboto:wght@400;500&display=swap');
+
+
+
+:root {
+  --azul: #1B5BFF;
+  --branco: #fff;
+  --pretoTopo: #272727;
+  --pretoCorpo: #1E1B1B;
+  --fundo: #272727;
+  --cinza: #444343;
+  --cinzaSegundario: #676767;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Nunito;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  /* text-transform: capitalize; */
+  transition: .2s linear;
+  /* color: #FFF; */
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  color: var(--branco);
+}
+
+
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+  overflow-x: hidden;
+}
+
+body{
+  background-color: var(--fundo);
+}
+
+p{
+  font-weight: 500;
+}
+
+button{
+  /* font-size: 1rem; */
+  text-transform: uppercase;
+  background-color: var(--azul);
+  color: var(--branco);
+  border-radius: 3px;
+  height: 32px;
+  width: 109px;
+  cursor: pointer;
+}
+
+span{
+  color: #1B5BFF;
+}
+

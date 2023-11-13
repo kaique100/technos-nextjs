@@ -1,0 +1,77 @@
+.modal-container {
+    width: 100vw;
+    height: 100vh;
+    border-radius: 6px;
+    background: rgba(0, 0, 0, 0.63);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 30000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* transition: .3s ease all; */
+}
+
+.modal {
+
+    background: var(--preta);
+    width: 60%;
+    min-width: 300px;
+    padding: 40px;
+    position: relative;
+    /* border: 10px solid; */
+    border-radius: 6px;
+    background: #272727;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.formulario .formModal  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formulario .formModal  h2 {
+    text-align: center;
+    align-items: center;
+    margin-bottom: 6%;
+}
+
+.formulario .formModal  input {
+    border-radius: 6px;
+    border: 1px solid #8D8D8D;
+    background: #444343;
+    width: 100%;
+    margin-bottom: 3%;
+    height: 48px;
+}
+
+.formulario .formModal  input::placeholder {
+    color: #FFF;
+    
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.formulario .formModal  button {
+    width: 100%;
+    height: 47px;
+    color: #FFF;
+
+    font-size: 12px;
+
+    font-weight: 500;
+
+}
+
+.buttonFechar {
+    display: flex;
+    justify-content: end;
+
+}

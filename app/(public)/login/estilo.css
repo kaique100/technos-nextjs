@@ -1,0 +1,99 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Baloo+2:wght@400;800&family=Nunito:ital,wght@0,300;0,800;1,800&family=Roboto:wght@400;500&display=swap');
+
+.login {
+    background-color: var(--branco);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Nunito;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    /* text-transform: capitalize; */
+    transition: .2s linear;
+    /* color: #FFF; */
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    color: var(--branco);
+}
+
+.login img {
+    width: 6%;
+    margin-bottom: 24px;
+}
+
+.login h2 {
+    color: var(--pretoCorpo);
+    font-size: 35px;
+    margin-bottom: 24px;
+
+}
+
+.login form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login form input {
+    border-radius: 6px;
+    border: 1px solid #C9C9C9;
+    background: var(--branco);
+    width: 372px;
+    height: 54px;
+    margin-bottom: 24px;
+    padding-left: 12px;
+    color: var(--pretoCorpo);
+    font-size: 14px;
+}
+
+.login form input::placeholder {
+    color: #969292;
+
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.login form button{
+    border-radius: 6px;
+    width: 100%;
+    font-style: normal;
+    font-weight: 500;
+    height: 54px;
+    margin-bottom: 24px;
+    font-size: 12px;
+} 
+
+.login form p {
+    color: #969292;
+    text-align: center;
+
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.login form a {
+    color: var(--azul);
+  
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.butaoChato{
+    color: var(--branco) !important;
+}
