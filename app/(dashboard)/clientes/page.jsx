@@ -1,26 +1,57 @@
-import Link from "next/link"
+"use client"
 
-import { fetchData } from "./services/get-users"
-export const metadata = {
-    title: 'Usuários - Sistema Olá Mundo!',
+import Header from '../../components/Header/Header.js'
+import Footer from '../../components/Footer/Footer.js'
+import Barra from '../../components/HeaderSegundario/index.js'
 
-}
+import imgPrestador from '../../assets/prestador.png'
 
-export default async function UserPage() {
+import './estilo.css'
+import Image from 'next/image'
+import { useState } from 'react'
 
-    const [fetchData, setData] = useState([]);
+export default function PrestadorPage() {
+    const [openModal, setOpenModal] = useState(false)
 
     return (
         <>
-            <h2>Usuários</h2>
+            <Header />
+            <Barra />
+            <article className='topo-prestador'>
+                <section >
+                    <h2>Clientes</h2>
+                </section>
+                <section >
+                    <p>6 resultados</p>
 
-            <ul>
-                {fetchData && data.map((item) => (
-                    <li key={item.id}>{item.name}</li>
-                ))}
-        
+                </section>
 
-        </ul >
+            </article>
+
+            <article className='pesquisa-prestador'>
+                <form action="#">
+                    <input type="text" placeholder='Busque o que deseja' />
+                    <button onClick={() => setOpenModal(true)}>Adicionar +</button>
+                </form>
+            </article>
+
+            <article className='lista-prestador'>
+                <section>
+
+                    <Image
+                        src={imgPrestador}
+                    />
+
+                  
+                    <h3>José da Silva</h3>
+                    <p>Mecanico</p>
+                    <p>(11) 99999-9999</p>
+                    <button>Expandir</button>
+                </section>
+
+            </article>
+            <Footer />
+
         </>
     )
 }
