@@ -6,9 +6,10 @@ import { useRouter } from "next/navigation"
 
 import './estilo.css'
 import './../../globals.css'
-import login from './../../../public/logo2.svg'
+import login from './../../assets/logo2.svg'
 import Link from 'next/link'
 import Image from 'next/image'
+
 
 
 export default function LoginPage() {

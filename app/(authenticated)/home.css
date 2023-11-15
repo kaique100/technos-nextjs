@@ -1,5 +1,5 @@
 .home {
-  background: linear-gradient(90deg, #000 0%, rgba(0, 0, 0, 0.92) 13.02%, rgba(0, 0, 0, 0.81) 32.81%, rgba(0, 0, 0, 0.62) 54.17%, rgba(0, 0, 0, 0.00) 100%), url('../../public/banner.png'), lightgray 0px -327.646px / 100% 233.474% no-repeat;
+  background: linear-gradient(90deg, #000 0%, rgba(0, 0, 0, 0.92) 13.02%, rgba(0, 0, 0, 0.81) 32.81%, rgba(0, 0, 0, 0.62) 54.17%, rgba(0, 0, 0, 0.00) 100%), url('../assets/banner.png'), lightgray 0px -327.646px / 100% 233.474% no-repeat;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -117,7 +117,7 @@ article form button span{
 
 
 .titulo-funcionalidade {
-  background: linear-gradient(180deg, rgba(30, 27, 27, 0.56) 0%, rgba(30, 27, 27, 0.84) 37.5%, #1E1B1B 100%), url('../../public/banner3.png'), lightgray 0px -350.254px / 100% 396.452% no-repeat;
+  background: linear-gradient(180deg, rgba(30, 27, 27, 0.56) 0%, rgba(30, 27, 27, 0.84) 37.5%, #1E1B1B 100%), url('../assets/banner3.png'), lightgray 0px -350.254px / 100% 396.452% no-repeat;
   height: 241px;
   background-position: center;
   background-size: cover;
@@ -150,7 +150,7 @@ article form button span{
 
 .contato-home {
   height: 474px;
-  background: linear-gradient(0deg, rgba(27, 91, 255, 0.62) 0%, rgba(27, 91, 255, 0.62) 100%), url('../../public/banner2.png'), lightgray 0px -458.671px / 100% 207.818% no-repeat;
+  background: linear-gradient(0deg, rgba(27, 91, 255, 0.62) 0%, rgba(27, 91, 255, 0.62) 100%), url('../assets/banner2.png'), lightgray 0px -458.671px / 100% 207.818% no-repeat;
   background-position: center;
   background-size: cover;
   padding: 10rem 9%;

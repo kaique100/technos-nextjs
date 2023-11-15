@@ -1,0 +1,204 @@
+.voltarCliente {
+    padding: 18rem 9% 3rem;
+    display: flex;
+    align-items: center;
+}
+
+.voltarCliente a {
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.voltarCliente span {
+    font-size: 19px;
+    width: 19px;
+    height: 2px;
+}
+
+.cliente section {
+    display: flex;
+    /* justify-content: space-between; */
+    /* width: 100%; */
+}
+
+.cliente {
+    padding: 2rem 5% 3rem;
+    /* padding: 18rem 9% 3rem; */
+    display: flex;
+    justify-content: space-around;
+
+    /* flex-direction: column; */
+    /* width: 100%; */
+}
+
+
+
+.infoVeiculoCliente {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.infoCliente {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+
+
+.infoCliente form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+.infoCliente form button {    
+    text-align: center;
+    width: 100%;
+    font-weight: 500;
+    margin-top: 2rem;
+    font-size: 12px;
+  
+}
+
+.infoCliente form label {
+
+    font-size: 15px;
+
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
+
+
+.infoCliente form input {
+    border-radius: 6px;
+    border: 1px solid #8D8D8D;
+    /* background: var(--cinza); */
+    color: #FFF;
+    font-family: Nunito;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    width: 100%;
+    height: 43px;
+    padding-left: 15px;
+    margin-bottom: 1.5rem;
+    background-color: transparent;
+}
+
+
+.infoCliente img {
+    width: 100%;
+}
+
+.imgCliente span {
+    display: flex;
+    justify-content: end;
+    margin-top: -30px;
+    /* margin-left: 50px; */
+}
+
+.infoVeiculo {
+    height: 30%;
+    width: 80%;
+    border-radius: 6px;
+    border: 1px solid #8D8D8D;
+    background: #444343;
+    padding: 2rem;
+    margin-bottom: 4rem;
+    height: inherit;
+}
+
+.tituloInfoVeiculo {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 5px;
+    /* height: 40%; */
+    /* flex-shrink: 0; */
+}
+
+.tituloInfoVeiculo div p {
+
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.infoVeiculo h3 {
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.infoVeiculo p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5;
+
+}
+
+.tituloInfoApolice {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 3px;
+}
+
+.tituloInfoApolice div p {
+    font-size: 20px;
+    font-weight: 500;
+
+}
+
+.infoApolice {
+    height: 42%;
+    border-radius: 6px;
+    border: 1px solid #8D8D8D;
+    background: #444343;
+    padding: 2rem;
+    height: inherit;
+
+}
+
+.infoApolice div h3 {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.infoApolice p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+
+@media screen and (max-width: 992px) {
+    .infoVeiculo {
+        width: 100%;
+
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .cliente {
+        flex-direction: column;
+    }
+
+    .cliente section {
+        width: 100%;
+
+    }
+}
+
+
+
+@media screen and (max-width: 600px) {}

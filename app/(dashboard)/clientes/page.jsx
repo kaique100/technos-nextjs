@@ -1,53 +1,64 @@
-"use client"
+// "use client" 
 
 import Header from '../../components/Header/Header.js'
 import Footer from '../../components/Footer/Footer.js'
 import Barra from '../../components/HeaderSegundario/index.js'
 
-import imgPrestador from '../../assets/prestador.png'
+import imgCliente from '../../assets/cliente.png'
 
 import './estilo.css'
 import Image from 'next/image'
-import { useState } from 'react'
+// import { useState } from 'react'
+import Link from 'next/link.js'
+// import data from './../../api/pegarClientes'
 
-export default function PrestadorPage() {
-    const [openModal, setOpenModal] = useState(false)
+async function pegarClientes() {
+    const res = await fetch("http://localhost:3000/api/pegarClientes")
 
+    return res.json()
+}
+
+
+export default async function PrestadorPage() {
+    // const [openModal, setOpenModal] = useState(false)
+     const dados = await pegarClientes();
+    
+    console.log(dados)
+//   dados = fetch("localhost:3000/api/pegarClientes")
+console.log("teste")
     return (
         <>
             <Header />
             <Barra />
-            <article className='topo-prestador'>
+            <article className='topo-clientes'>
                 <section >
                     <h2>Clientes</h2>
                 </section>
                 <section >
-                    <p>6 resultados</p>
+                    <p>10 resultados</p>
 
                 </section>
 
             </article>
 
-            <article className='pesquisa-prestador'>
+            <article className='pesquisa-clientes'>
                 <form action="#">
                     <input type="text" placeholder='Busque o que deseja' />
-                    <button onClick={() => setOpenModal(true)}>Adicionar +</button>
+                    <button >Adicionar +</button>
                 </form>
             </article>
 
-            <article className='lista-prestador'>
-                <section>
+            <article className='lista-clientes'>
+                {dados.data.map((cliente) =>(
+                <section key={cliente.idCliente}>
+                    <Image src={imgCliente} alt="" />
+                    <h3>ID do cliente: {cliente.idCliente}</h3>                       
 
-                    <Image
-                        src={imgPrestador}
-                    />
-
-                  
-                    <h3>José da Silva</h3>
-                    <p>Mecanico</p>
-                    <p>(11) 99999-9999</p>
-                    <button>Expandir</button>
+                    <p>Estado civil: {cliente.estadoCivil}</p>                    
+                    <button><Link href="clientes/pagina-cliente">Expandir</Link></button>
                 </section>
+                ))}
+
 
             </article>
             <Footer />
